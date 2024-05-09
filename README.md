@@ -2,6 +2,8 @@
 # This final project use athena++ code to finish the work.
 # The public version of the athena++ code can be found: https://github.com/PrincetonUniversity/athena/wiki 
 # The only thing I add is the Hall effect in the magnetic field diffusion term, where the modifications are at src/field/field_diffusion.
+# The sub function called FieldDiffusion::HallEMF in the "diffusivity.cpp"
+# There are a little modifications in the "field_diffusion.cpp"
 # To compile the problems, the module should include the magnetic field.
 # Please make sure you have included the "-b" when you compile the code.
 Run the "configure.py" with -b, to include the magnetic field in the code.
