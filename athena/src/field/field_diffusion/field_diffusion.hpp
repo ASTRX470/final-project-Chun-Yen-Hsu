@@ -80,7 +80,7 @@ class FieldDiffusion {
   void OhmicEMF(const FaceField &b, const AthenaArray<Real> &bc, EdgeField &e);
   void HallEMF(const FaceField &b, const AthenaArray<Real> &bc, EdgeField &e);
   void AmbipolarEMF(const FaceField &b, const AthenaArray<Real> &bc, EdgeField &e);
-  void CT_Hall(const Real wght, FaceField &b_out);
+  //void CT_Hall(const Real wght, FaceField &b_out);
   // functions for energy flux
   void PoyntingFlux(EdgeField &e, const AthenaArray<Real> &bcc);
 

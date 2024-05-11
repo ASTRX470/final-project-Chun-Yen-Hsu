@@ -1,0 +1,23 @@
+# LOAD MODULE YOU NEED
+module load anaconda
+#module load gompi
+#module load hdf5/1.12.2
+module load intel-compilers/2024.0.0
+module load impi/2021.11.0
+module load iintelmpi
+#module load impi/2021.7.1
+module load hdf5/1.14.3
+
+python configure.py \
+--prob=linear_wave_Hall_whistler_dv \
+--flux=default \
+--nscalars=0 \
+-mpi \
+-b \
+-hdf5 \
+-h5double \
+--hdf5_path=$HDF5_ROOT   
+
+make clean
+#make
+make -j
